@@ -193,9 +193,9 @@ input[type=submit],input[type=reset] {
 /* ===== STATE STYLES ======= */
 
 #submit:not(.active):hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 #submit.submitted:hover {
-  background-color: #cccccc;
+  background-color: #00f00;
 }
