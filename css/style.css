@@ -5,6 +5,7 @@ body {
   background-image: url(../images/controller.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 h1 {
@@ -55,19 +56,24 @@ input {
   resize: vertical;
   display: inline-block;
   width: 150px;
-  padding-top: .5em;
+  padding: .5em .2em .5em .2em;
   border-radius: .3em;
+  text-align: right;
+}
+
+input[type=name] {
+  text-align: left;
 }
 
 /* EMAIL CSS */
 
-#input-email {
+input[type=email] {
   width: 100%;
-  padding-bottom: 1em;
   resize: vertical;
+  width: 200px;
 }
 
-label[for=email] {
+label[type=email] {
   padding-bottom: .5em;
 }
 
@@ -79,19 +85,18 @@ label[for=email] {
 
 /* AGE VERIFICATION CSS */
 
-#input-age-verification {
+input[type=date] {
   padding-top: .3em;
   padding-bottom: .3em;
-  width: 100%;
 }
 
-label[for=age-verification] {
+label[type=date] {
   display: inline;
   width: 100%;
   padding: .1em;
 }
 
-#age-verification {
+#date {
   width: auto;
   display: inline;
   vertical-align: top;
@@ -106,9 +111,8 @@ label[for=age-verification] {
   text-align: center;
 }
 
-#input-submit,#input-reset {
-  width: 100%;
-  padding-top: 1em;
+input[type=submit],input[type=reset] {
+  
   text-align: center;
   margin: 2em;
 }
