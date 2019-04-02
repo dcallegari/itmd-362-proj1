@@ -1,0 +1,200 @@
+/* ===== LAYOUT STYLES ====== */
+
+h1 {
+  font: bold 36px Calibri, Arial, Sans-serif, Roboto;
+  color: black;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+}
+
+section, form {
+  max-width: 720px;
+  margin: auto;
+}
+
+p {
+  margin: 2em;
+  font-size: 22px;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: left;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 22px;
+}
+
+form {
+  background-color: #808080;
+  margin-top: 1em;
+  padding: 1.5em;
+  border-radius: 0.5em;
+}
+
+input {
+  resize: vertical;
+  display: inline-block;
+  padding: .2em;
+  border-radius: .3em;
+}
+
+/* EMAIL CSS */
+
+#input-email {
+  width: 100%;
+  padding-bottom: 1em;
+  resize: vertical;
+}
+
+label[for=email] {
+  padding-bottom: .5em;
+}
+
+#email {
+  width: 100%;
+  border-style: hidden;
+  padding: .3em;
+}
+
+/* AGE VERIFICATION CSS */
+
+#input-age-verification {
+  padding-top: .3em;
+  padding-bottom: .3em;
+  width: 100%;
+}
+
+label[for=age-verification] {
+  display: inline;
+  width: 100%;
+  padding: .1em;
+}
+
+#age-verification {
+  width: auto;
+  display: inline;
+  vertical-align: top;
+  margin-right: .5em;
+  width: 1em;
+  height: 1em;
+}
+
+/* SUBMIT CSS */
+
+.submission {
+  text-align: center;
+}
+
+#input-submit,#input-reset {
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+  margin: 2em;
+}
+
+#submit, #reset {
+  width: 70%;
+  height: 2em;
+  border-style: hidden;
+}
+
+/* ===== MODULAR STYLES ===== */
+/* ===== MEDIA  SCALING ===== */
+
+/* MEDIA > Basic Smartphones */
+@media screen and (max-width: 360px){
+  h1 {
+    font-size: .1em;
+    line-height: .1em;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  p, label, input {
+    font-size: .07em;
+    line-height: .1em;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  #age-verification {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+  }
+}
+
+/* MEDIA > Large Tablets */
+@media screen and (min-width: 480px){
+  /* EMAIL */
+  #input-email {
+    width: 100%;
+    display: block;
+  }
+  
+  label[for=email] {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #email {
+    width: 80%;
+    display: inline-block;
+  }
+  
+  /* AGE VERIFICATION */
+  #input-age-verification {
+    width: 80%;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    float: right;
+  }
+  
+  label[for=age-verification] {
+    display: inline-block;
+    text-align: left;
+    width: 80%
+  }
+  
+  #age-verification {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .5em;
+    width: 1em;
+    height: 2em;
+  }
+  
+  /* SUBMIT */
+  #input-submit {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+}
+
+/* MEDIA > Larger Laptops, Desktops */
+@media screen and (min-width: 720px){
+  main {
+    width: 720px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* ===== STATE STYLES ======= */
+
+#submit:not(.active):hover {
+  background-color: #cccccc;
+}
+
+#submit.submitted:hover {
+  background-color: #cccccc;
+}
