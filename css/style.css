@@ -1,7 +1,15 @@
 /* ===== LAYOUT STYLES ====== */
 
+body {
+  background-position: fixed;
+  background-image: url(../images/controller.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
-  font: bold 36px Calibri, Arial, Sans-serif, Roboto;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 48px;
   color: black;
   letter-spacing: .05em;
   text-transform: uppercase;
@@ -11,8 +19,9 @@ h1 {
 }
 
 section, form {
-  max-width: 720px;
+  max-width: 600px;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -35,10 +44,18 @@ form {
   border-radius: 0.5em;
 }
 
+label {
+  display: inline-block;
+  width: 150px;
+  padding-top: .5em;
+  font-size: 18px;
+}
+
 input {
   resize: vertical;
   display: inline-block;
-  padding: .2em;
+  width: 150px;
+  padding-top: .5em;
   border-radius: .3em;
 }
 
