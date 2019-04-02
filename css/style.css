@@ -1,7 +1,6 @@
 /* ===== LAYOUT STYLES ====== */
 
 body {
-  background-position: fixed;
   background-image: url(../images/controller.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -197,5 +196,5 @@ input[type=submit],input[type=reset] {
 }
 
 #submit.submitted:hover {
-  background-color: #00f00;
+  background-color: #00ff00;
 }
