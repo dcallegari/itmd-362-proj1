@@ -112,7 +112,6 @@ label[type=date] {
 }
 
 input[type=submit],input[type=reset] {
-  
   text-align: center;
   margin: 2em;
 }
@@ -129,73 +128,54 @@ input[type=submit],input[type=reset] {
 /* MEDIA > Basic Smartphones */
 @media screen and (max-width: 360px){
   h1 {
-    font-size: .1em;
+    font-size: 18px;
     line-height: .1em;
     font-style: normal;
     font-weight: normal;
   }
   
   p, label, input {
-    font-size: .07em;
+    font-size: 16px;
     line-height: .1em;
     font-style: normal;
     font-weight: normal;
   }
-  
-  #age-verification {
-    display: inline-block;
-    vertical-align: middle;
-    width: 2em;
-    height: 2em;
-  }
 }
 
 /* MEDIA > Large Tablets */
-@media screen and (min-width: 480px){
+@media screen and (max-width: 600px){
+  form {
+    max-width: 360px;
+  }
+  
+  input {
+    display: block;
+    margin-top: 2em;
+  }
+  
+  /* NAME */
+  input[type=name] {
+    width: 50%;
+    display: table;
+  }
+  
   /* EMAIL */
-  #input-email {
+  input[type=email] {
     width: 100%;
     display: block;
-  }
-  
-  label[for=email] {
-    width: 20%;
-    display: inline-block;
-    text-align: center;
-  }
-  
-  #email {
-    width: 80%;
-    display: inline-block;
   }
   
   /* AGE VERIFICATION */
-  #input-age-verification {
-    width: 80%;
-    display: block;
+  input[type=date] {
+    display: inline-block;
     overflow: hidden;
-    text-align: left;
-    float: right;
-  }
-  
-  label[for=age-verification] {
-    display: inline-block;
-    text-align: left;
-    width: 80%
-  }
-  
-  #age-verification {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: .5em;
-    width: 1em;
-    height: 2em;
+    width: auto;
   }
   
   /* SUBMIT */
-  #input-submit {
-    width: 100%;
-    display: block;
+  input[type=submit], input[type=reset] {
+    width: 80%;
+    text-align: center;
     overflow: hidden;
   }
 }
@@ -213,7 +193,7 @@ input[type=submit],input[type=reset] {
 /* ===== STATE STYLES ======= */
 
 #submit:not(.active):hover {
-  background-color: #cccccc;
+  background-color: white;
 }
 
 #submit.submitted:hover {
