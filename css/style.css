@@ -113,6 +113,7 @@ label[type=date] {
 
 input[type=submit],input[type=reset] {
   text-align: center;
+  font-weight: bold;
   margin: 2em;
 }
 
