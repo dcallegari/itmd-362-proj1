@@ -22,6 +22,7 @@ section, form {
   max-width: 600px;
   margin: auto;
   font-family: 'Roboto', sans-serif;
+  opacity: .8;
 }
 
 p {
