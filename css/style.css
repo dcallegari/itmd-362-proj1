@@ -65,6 +65,23 @@ input[type=text] {
   text-align: left;
 }
 
+footer {
+  margin-top: 2em;
+  padding: .1em;
+  text-align: center;
+  display: block;
+  background-color: #A7A9BE;
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 16px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
 /* EMAIL CSS */
 
 input[type=email] {
